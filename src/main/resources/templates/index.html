@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h3>Calculadora</h3>
+    <form method="POST" action="/somar">
+        <label for="a">Primeiro valor:</label> <input type="text" name="a" id="a">
+        <br>
+        <select name="operacao" id="operacao">
+            <option value="soma"> + </option>
+            <option value="subtracao"> - </option>
+            <option value="divisao"> / </option>
+            <option value="multiplicao"> * </option>
+        </select>
+        <br>
+        <label for="a">Segundo valor:</label> <input type="text" name="b" id="b">
+        <br>
+        <input type="submit" value="Somar">
+    </form>
+
+    <h1 th:text="${resultado}"></h1>
+</body>
+</html>
