@@ -7,7 +7,7 @@ public class Operacao {
         Double aDouble = Double.valueOf(a);
         Double bDouble = Double.valueOf(b);
 
-        Double resultado = aDouble + bDouble;
+        Double resultado = null;
 
         switch (operacao) {
             case "soma":
