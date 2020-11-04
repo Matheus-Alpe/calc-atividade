@@ -2,6 +2,16 @@ package br.edu.usj.ads.lpii.calculadora;
 
 public class Operacao {
 
+    private Double valorFinal;
+
+    public Double getValorFinal() {
+		return valorFinal;
+	}
+
+	public void setValorFinal(Double valorFinal) {
+		this.valorFinal = valorFinal;
+	}
+
     public String calcular(String a, String operacao, String b) {
 
         Double aDouble = Double.valueOf(a);
@@ -28,6 +38,11 @@ public class Operacao {
                 break;
         }
 
+        this.setValorFinal(resultado);
         return new String(a + operacao + b + " = " + resultado);
     }
+
+
+
+	
 }
